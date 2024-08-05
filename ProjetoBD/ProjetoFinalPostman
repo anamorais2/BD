@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "4ad61f31-68a4-4cd8-93e7-a5ea91d5ff2f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27147255",
+		"_collection_link": "https://warped-capsule-544050.postman.co/workspace/Team-Workspace~791a8072-d457-4032-86ae-b7cbf4ed8bcc/collection/27147255-4ad61f31-68a4-4cd8-93e7-a5ea91d5ff2f?action=share&creator=27147255&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "ProjetoFinal",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8080/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome_utilizador\": \"administrador23\",\r\n  \"nome\": \"Pedro Lopes\",\r\n  \"morada\": \"Porto\",\r\n  \"email\": \"PedroLopes@pt.com\",\r\n  \"contacto\": 987891231,\r\n  \"password\": \"administrador23\",\r\n  \"tipo\": \"administrador\"\r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/register"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome_utilizador\": \"administrador23\",\r\n  \"password\": \"administrador23\"\r\n  \r\n  \r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/login"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/song",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"genero\": \"rap\",\r\n    \"titulo\": \"Cemitério\",\r\n    \"data_lanc\": \"2014-5-31\",\r\n    \"duracao\": 250,\r\n    \"list_artistas\": [\"Artista2000\", \"Dillazz\"],\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJQaXJ1a2EyIn0.AZcTBwT4McRy7fE8cbpE5swTB_xSlFfvAfXCo6K0VY0\"\r\n  \r\n  \r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/song"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Oitavo Céu\", \r\n  \"data_lanc\": \"2021-11-01\", \r\n  \"list_songs\": [\r\n    {\r\n      \"genero\": \"rap-jazz\",\r\n      \"titulo\": \"Mira\",\r\n      \"data_lanc\": \"2021-11-01\",\r\n      \"duracao\": 301,\r\n      \"lista_artistas\": []\r\n    },\r\n    31\r\n  ],\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJQaXJ1a2EyIn0.AZcTBwT4McRy7fE8cbpE5swTB_xSlFfvAfXCo6K0VY0\"\r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/album"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/artist_info/Piruka2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Alone\", \r\n  \"data_lanc\": \"2021-12-02\", \r\n  \"list_songs\": [\r\n    {\r\n      \"genero\": \"rap-rock\",\r\n      \"titulo\": \"Rock-n-Roll\",\r\n      \"data_lanc\": \"2017-01-24\",\r\n      \"duracao\": 300,\r\n      \"lista_artistas\": []\r\n    },\r\n    31\r\n  ],\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJQaXJ1a2EyIn0.AZcTBwT4McRy7fE8cbpE5swTB_xSlFfvAfXCo6K0VY0\"\r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/artist_info/Piruka2"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/song/mi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8080/song/mi"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/report/2023-05",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8080/report/2023-05"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number_of_cards\": 2,\r\n    \"preco\": 25,\r\n    \"consumidor_nome_utilizador\": \"Consumidor1\",\r\n    \"data_limite\": \"2026-06-06\",\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJhZG1pbmlzdHJhZG9yMjMifQ.3UqCYzs-Vg8jP_vYnDadp5kkdDsTVLJZUMKwtVal_mQ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/card"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/subcription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipo_assinatura\": \"semester\",\r\n  \"lista_cartoes\": [2443928569779284,\r\n        6826435865954092],\r\n  \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJDb25zdW1pZG9yMSJ9.FYxuPTPOze6yBHjf_FIzHG5u7rFLwfRGGRSUkzLdymI\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/subcription"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/playlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"playlist_name\":\"Rap_me\",\r\n  \"visibility\": false,\r\n  \"songs\": [31,32],\r\n  \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJDb25zdW1pZG9yMSJ9.FYxuPTPOze6yBHjf_FIzHG5u7rFLwfRGGRSUkzLdymI\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/playlist"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/comments/31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"comment\":\"Whoao, fantástico\",\r\n  \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJDb25zdW1pZG9yMSJ9.FYxuPTPOze6yBHjf_FIzHG5u7rFLwfRGGRSUkzLdymI\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/comments/31"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/comments/31/7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"comment\":\"Mesmo incrivel\",\r\n  \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJDb25zdW1pZG9yMSJ9.FYxuPTPOze6yBHjf_FIzHG5u7rFLwfRGGRSUkzLdymI\"\r\n  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/comments/31/7"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8080/31",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lX3V0aWxpemFkb3IiOiJDb25zdW1pZG9yMSJ9.FYxuPTPOze6yBHjf_FIzHG5u7rFLwfRGGRSUkzLdymI\"\r\n  \r\n  \r\n}\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8080/31"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
